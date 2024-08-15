@@ -1,0 +1,20 @@
+/* fonts.css */
+
+/* Import the Playfair Display font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+/* Apply the Playfair Display font to the entire body */
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Specific styles for headers or other elements using Playfair Display */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Example for a specific class */
+.custom-header {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700; /* Ensure the bold weight is applied */
+}

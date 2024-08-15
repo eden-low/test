@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Javascripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="Mstyle.css"/>
+    <title>Malaysian Cuisines</title>
+    <script>
+        $(document).ready(function(){
+            $("#menu-btn").click(function(){
+                $(".navbar").slideToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="bg">
+        <button id="menu-btn" class="menu-btn">Menu</button>
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="navbar-collapse show" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="homepage.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cuisines.html">Cuisines</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <footer class="text-center">
+        <p>
+            I Learn and Develop this Website from 
+            <a href="https://www.w3schools.com/default.asp">W3Schools</a> | 
+            <a href="https://getbootstrap.com/">Bootstrap</a> | 
+            <a href="https://fontawesome.com/">Font Awesome</a> | 
+            <a href="http://youtube.com">Youtube</a>
+        </p>
+    </footer>
+</body>
+</html>

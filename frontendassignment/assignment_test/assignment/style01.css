@@ -1,0 +1,304 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; /* Soft background color */
+}
+
+/* Apply orange font color specifically for the blog page */
+.blog-page {
+    color: #ff5722; /* Set text color for the blog page */
+}
+
+.blog-page h2,
+.blog-page p,
+.blog-page h3,
+.blog-page h4 {
+    color: #080808; /* Ensure all text elements are orange */
+    transition: color 0.3s ease; /* Smooth transition for color changes */
+}
+
+.blog-page h2:hover,
+.blog-page p:hover,
+.blog-page h3:hover,
+.blog-page h4:hover {
+    color: #090909; /* Darker orange on hover */
+}
+
+/* Image styles for the blog page */
+.blog-page img {
+    max-width: 80%; /* Ensure images fit within the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+    margin-bottom: 20px; /* Add spacing below images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth image effects */
+}
+
+.blog-page img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Navbar, Footer, and Other Section Styles */
+.navbar {
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: white; /* Ensure footer text color */
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Custom Styles */
+html, body {
+    height: 100%;
+}
+
+.sec {
+    min-height: 100%;
+    padding-top: 300px; 
+    padding-bottom: 200px; 
+}
+
+nav {
+    background-color: rgba(59, 65, 60, 0.7);
+}
+
+.nav-link, .navbar-brand, .navbar-toggler-icon, footer p a {
+    color: #94D1BE;
+}
+
+.nav-link:hover, .navbar-brand:hover, footer p a:hover {
+    color: #FFFFFF;
+}
+
+footer {
+    min-height: 25%;
+    background-color: #3B413C;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+
+.characteristics {
+    letter-spacing: 6px;
+    color: white; /* Ensure characteristics text is white */
+}
+
+.motto {
+    font-style: italic;
+    font-size: 140%;
+    color: white; /* Ensure motto text is white */
+}
+
+.table {
+    float: right;
+    color: white; /* Ensure table text is white */
+}
+
+a.logo {
+    color: #94D1BE;
+    margin: 15px;
+}
+
+#tab {
+    float: center;
+    margin-left: 400px;
+    padding: 60px;
+    color: white; /* Ensure tab text is white */
+}
+
+#Home {
+    background-color: #C9421E;
+    color: #f7fff7;
+}
+
+.more-space-bottom {
+    margin-bottom: 100px;
+    color: white; /* Ensure more-space-bottom text is white */
+}
+
+#academic {
+    background-color: #8FFDFC;
+    color: #C9421E;
+}
+
+.my-box {
+    background-color: #94D1BE;
+    min-height: 300px;
+    margin: 2px;
+    padding: 20px;
+    border: 3px solid #3B413C;
+    box-shadow: 5px 5px 20px grey;
+    color: white; /* Ensure my-box text is white */
+}
+
+.fa-7x {
+    color: #FF3355;
+}
+
+/* Button Styling */
+.blog-page .btn {
+    background-color: #2922ff; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.blog-page .btn:hover {
+    background-color: #e64a19; /* Darker button color on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.parallax {
+    position: relative;
+    background-size: cover;
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+}
+
+.parallax::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    background: rgba(249, 246, 246, 0.765); /* Dark overlay for contrast */
+    z-index: 1;
+}
+
+.parallax-content {
+    position: relative;
+    z-index: 2;
+}
+
+.parallax-content h2 {
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    font-size: 3rem;
+    color: hsl(0, 79%, 47%);
+}
+
+.regional-cuisine-spotlight h2 {
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    font-size: 3rem;
+    color: hsl(0, 79%, 47%);
+}
+
+/* Section Titles */
+h2, h3 {
+    font-weight: 700;
+    color: #C9421E;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Paragraph Text */
+p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+/* Image Styling */
+.region-item img, .recipe-item img, .travelguides-item img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.region-item img:hover, .recipe-item img:hover, .travelguides-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Region, Recipe, and Travel Guides Section Layout */
+.region-highlight, .recipe-item, .travelguides-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.region-item, .recipe-item, .travelguides-item {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #C9421E;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #A83618;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    .region-item, .recipe-item, .travelguides-item {
+        max-width: 90%;
+    }
+}
+
